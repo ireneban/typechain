@@ -1,0 +1,8 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:halfundecided/typechain.git",
+  "author": "Mijeong Ban <mban1@stevens.edu>",
+  "license": "MIT"
+}
