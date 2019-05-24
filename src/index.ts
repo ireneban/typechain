@@ -1,14 +1,30 @@
-// interface type
-interface Human {
-  name: string;
-  age: number;
-  gender: string;
+// // interface type
+// interface Human {
+//   name: string;
+//   age: number;
+//   gender: string;
+// }
+
+// same as interface
+class Human {
+  public name: string;
+  public age: number;
+  public gender: string;
+  constructor(name: string, age: number, gender?: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
 }
-const person = {
-  name: "david",
-  age: 21,
-  gender: "female"
-};
+
+// when you use interface thingy
+// const person = {
+//   name: "david",
+//   age: 21,
+//   gender: "female"
+// };
+
+const david = new Human("David", 21, "female");
 
 // if you put question mark next to a parameter it means it's optional
 // const sayHi = (name: string, age: number, gender: string): string => {
@@ -21,6 +37,6 @@ const sayHi = (person: Human): string => {
   }!`;
 };
 
-console.log(sayHi(person));
+console.log(sayHi(david));
 
 export {};
