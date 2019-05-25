@@ -66,7 +66,7 @@ const createNewBlock = (data: string): Block => {
     data,
     newTimeStamp
   );
-
+  addBlock(newBlock);
   return newBlock;
 };
 
@@ -91,5 +91,19 @@ const isBlockValid = (candidateBlock: Block, previousBlock: Block): boolean => {
     return true;
   }
 };
+
+const addBlock = (candidateBlock: Block): void => {
+  if (isBlockValid(candidateBlock, getLatestBlock())) {
+    blockchain.push(candidateBlock);
+  }
+};
+
+// create new blocks!!
+createNewBlock("second block");
+createNewBlock("third block");
+createNewBlock("fourth block");
+
+// check this out
+console.log(blockchain);
 
 export {};
