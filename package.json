@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "add": "^2.0.6",
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^3.2.1",
     "global": "^4.3.2",
     "tsc-watch": "^2.2.1",
     "typescript": "^3.4.5"
